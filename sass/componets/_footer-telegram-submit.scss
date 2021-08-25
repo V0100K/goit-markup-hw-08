@@ -1,0 +1,96 @@
+/* --------------- Секция отправки телеграммм------------------- */
+
+.footer-submit {
+    @media screen and (min-width: 768px) {
+    }
+}
+
+.footer-submit__input {
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+}
+
+.footer-submit-title {
+    line-height: 1.1;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--wite-color);
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 0px;
+        text-align: left;
+    }
+}
+
+.footer-submit__input_wrapper {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.footer-submit__input_form {
+    width: auto;
+    height: 50px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 50px;
+    }
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: none;
+    padding-left: 16px;
+    color: var(--wite-color);
+    font-size: 16px;
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        height: 50px;
+    }
+}
+
+.footer-submit__input_btn {
+    padding: 10px 10px 10px 29px;
+    background-color: var(--accent-text-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--wite-color);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: var(--accent-text-color);
+    margin: 0 auto;
+
+    //margin-top: 20px;
+
+    @media screen and (max-width: 1200px) {
+        display: block;
+    }
+    @media screen and (min-width: 1200px) {
+        display: inline-flex;
+        align-items: center;
+        min-width: 200px;
+        height: 50px;
+        margin-left: 12px;
+        margin-top: 0;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+}
+
+.footer-btn-icon {
+    fill: var(--wite-color);
+    margin-left: 10px;
+
+    margin-top: 8px;
+
+    //display: block;
+}

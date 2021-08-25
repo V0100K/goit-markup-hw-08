@@ -1,0 +1,25 @@
+.footer-left {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-left__contacts a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+
+    & p {
+        margin-bottom: 9px;
+        color: var(--wite-color);
+    }
+}
+
+.footer-list {
+    & .footer-list_item + .footer-list_item {
+        margin-top: 9px;
+    }
+}

@@ -1,0 +1,25 @@
+.header-contacts-list {
+    display: flex; /*выравнивает в одну строку список контакты*/
+    margin-left: auto;
+
+    & li + li {
+        margin-left: 50px; /*Отступ всем кроме последнего */
+    }
+}
+
+.color-adress {
+    color: var(--main-text-color);
+    line-height: 1.14;
+}
+
+/*----------------------icon cotnacts header---*/
+.icon-contacts {
+    display: flex;
+    align-items: center;
+    fill: var(--main-text-color);
+}
+
+.contact-icon {
+    fill: currentColor; /*наследование света и ховера от родителя */
+    margin-right: 10px;
+}

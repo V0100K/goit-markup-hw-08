@@ -1,0 +1,51 @@
+.portfolio-filter {
+    display: flex;
+}
+
+.portfolio-filter-list {
+    display: flex; /*список в строку дал ul */
+    flex-wrap: wrap;
+    margin-left: -8px;
+
+    justify-content: start; /*центровка */
+    //margin-top: 60px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center; /*центровка */
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        //margin-top: 94px; /*0000000000000000000000pzamena header 0000000000000000000000000000000*/
+        margin-bottom: 50px;
+    }
+}
+
+.portfolio-filter-list-item {
+    margin-left: 8px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+    }
+}
+
+.btn-filter {
+    color: var(--title-text-color);
+    background-color: #f5f4fa;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--wite-color);
+        background-color: var(--accent-text-color);
+        box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    }
+}

@@ -1,0 +1,122 @@
+.advantages-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        /* add formula calc  + margin*/
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+}
+.advantage-pic {
+
+}
+.advantages h3 {
+    @media screen and (min-width: 1200px) {
+        color: var(--title-text-color);
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+.advantages-item {
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 2);
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 120px) / 4);
+        margin-left: 30px;
+    }
+}
+
+/* --------------add pictures advantages------------*/
+.advntage-blok {
+    @media screen and (min-width: 480px) {
+        display: flex;
+        width: 354px;
+        height: 251px;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+
+        fill: #afb1b8;
+        background-color: #f5f4fa;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 450px;
+        height: 226px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        fill: #afb1b8;
+        background-color: #f5f4fa;
+    }
+}
+__________________________________________________
+===============================================================================================================
+
+.advantages-list {
+    /* add formula calc  + margin*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+
+.advantages h3 {
+    color: var(--title-text-color);
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.advantages-item {
+    width: calc((100% - 120px) / 4);
+    margin-left: 30px;
+}
+
+/* --------------add pictures advantages------------*/
+.advntage-blok {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    fill: #afb1b8;
+    background-color: #f5f4fa;
+}
+
+____________________________________________________________________________________
+
+advantages-item {
+   @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+}
+
+.advantages-item {
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 4 - 30px);
+    }
+}

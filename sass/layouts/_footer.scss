@@ -1,0 +1,21 @@
+footer {
+    background-color: var(--bgr-footer-color);
+    font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    //display: flex; /*footer left i footer social in line*/
+    //align-items: baseline;
+}
+.footer-container {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex; /*footer left i footer social in line*/
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+}

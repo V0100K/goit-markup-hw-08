@@ -1,0 +1,39 @@
+//UTILS
+
+@import './utils/variables';
+@import './utils/_visually-hidden';
+
+//BASE
+
+@import './base/body';
+@import './base/reset';
+@import './base/_container';
+@import './base/_section';
+
+//COMPONENTS
+
+@import './componets/logo';
+@import './componets/_header-menu';
+@import './componets/_header-contacts';
+@import './componets/_text-minor';
+@import './componets/_social-icon';
+@import './componets/_footer-logo';
+@import './componets/_footer-contacts';
+@import './componets/_footer-social-icon';
+@import './componets/_footer-telegram-submit';
+@import './componets/_portfolio-filter-nav';
+@import './componets/_portfolio-examples-effects';
+@import './componets/_backdrop-modal';
+@import './componets/_modal-window';
+@import './componets/_modal-window-form';
+
+//LAYOUTS
+
+@import './layouts/_header';
+@import './layouts/_hero';
+@import './layouts/_advantages';
+@import './layouts/_our-services';
+@import './layouts/_our-team';
+@import './layouts/_clients';
+@import './layouts/_footer';
+@import './layouts/_portfolio-examples';

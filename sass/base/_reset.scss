@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list h3 {
+    color: var(--title-text-color);
+}
+
+.list,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--main-text-color);
+
+    letter-spacing: 0.03em;
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 480px) {
+}

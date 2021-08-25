@@ -1,0 +1,30 @@
+/*----------------------icon sotial team--===============================-*/
+.social-list {
+    display: flex; /*  в строку иконки */
+    justify-content: center;
+
+    & > li:not(:last-child) {
+        margin-right: 10px; /*Отступ всем кроме последнего menu*/
+    }
+}
+
+.social-list__item_link-icon {
+    fill: inherit;
+}
+
+.social-list__item_link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /*  одна строка для времени изменения цвета при ховер*/
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+        fill: var(--wite-color);
+    }
+}

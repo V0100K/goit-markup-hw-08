@@ -1,0 +1,43 @@
+.our-services {
+    padding-top: 0;
+
+    @media screen and (max-width: 1200px) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+.services-item {
+    width: calc((100% - 90px) / 3); /* add formula calc  + margin  ---.team-list .team-item + .team-item */
+    margin-left: 30px;
+    z-index: -1;
+    position: relative; /* для позиционирования фона our-services-over*/
+}
+
+/*----ыон и цвет на картинках---*/
+.our-services-over {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 27px 82px;
+
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    overflow: auto;
+}

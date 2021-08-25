@@ -1,0 +1,26 @@
+/*----------------------icon sotial  footer---*/
+
+.footer-social {
+    & h3 {
+        text-transform: uppercase;
+        color: var(--wite-color);
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+        //margin-bottom: 60px;
+        margin-left: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+}
+
+.bgc {
+    background: rgba(255, 255, 255, 0.1); /*color and bg color sotial*/
+    fill: white;
+}
