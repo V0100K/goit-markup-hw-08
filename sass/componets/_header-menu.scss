@@ -199,8 +199,10 @@
         & .mobile__social-link {
             color: var(--accent-text-color);
         }
+        @media screen and (max-width: 400px) {
+            font-size: 16px;
+        }
     }
-
     .active-page {
         & .mobile__header-menu-link,
         & .mobile__header-menu-link::after {
