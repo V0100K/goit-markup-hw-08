@@ -191,6 +191,8 @@ section {
     border: none;
     padding: 0;
     line-height: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .burger-btn__icon {
     fill: var(--title-text-color);
@@ -282,6 +284,12 @@ section {
   }
   .mobile__social-menu-item .mobile__social-link {
     color: var(--accent-text-color);
+  }
+  .active-page .mobile__header-menu-link,
+  .active-page .mobile__header-menu-link::after {
+    color: var(--accent-text-color);
+    transform: scaleX(1);
+    /*-- отображения скорости полосы при hover i active --*/
   }
 }
 
