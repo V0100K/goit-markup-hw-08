@@ -16,7 +16,7 @@
         <!-- =======================Header================= -->
 
         <header class="header">
-            <div class="container">
+            <div class="container cont-bot">
                 <nav class="header-nav">
                     <a class="logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
                     <ul class="header-nav-menu-list list">
@@ -31,7 +31,7 @@
                 <ul class="header-contacts-list list">
                     <li class="header-contacts item">
                         <a class="header-menu-link color-adress icon-contacts-link" href="mailto:info@example.com">
-                            <svg class="contact-icon" width="16" height="12">
+                            <svg class="contact-icon mail" width="16" height="12">
                                 <use href="./img/sprite.svg#email"></use>
                             </svg>
                             info@devstudio.com
@@ -40,14 +40,56 @@
 
                     <li class="header-contacts item">
                         <a class="header-menu-link color-adress icon-contacts" href="tel:+380991111111">
-                            <svg class="contact-icon" width="10" height="16">
+                            <svg class="contact-icon tel" width="10" height="16">
                                 <use href="./img/sprite.svg#phone"></use>
                             </svg>
                             +38 096 111 11 11</a
                         >
                     </li>
                 </ul>
+                <button class="burger-btn" data-menu-open>
+                    <svg class="burger-btn__icon" width="40" height="40">
+                        <use href="./img/sprite.svg#burger"></use>
+                    </svg>
+                </button>
+                <!--===================== BURGER==================-->
             </div>
+
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button class="mobile-menu__close" data-menu-close>
+                        <svg class="mobile-menu__close-icon" width="32" height="32">
+                            <use href="./img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile__header-nav-menu-list desk list">
+                        <li class="mobile__header-nav-menu-item item"><a class="mobile__header-menu-link" href="./index.html">Студия</a></li>
+                        <li class="mobile__header-nav-menu-item item"><a class="mobile__header-menu-link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile__header-nav-menu-item item"><a class="mobile__header-menu-link" href="">Контакты</a></li>
+                    </ul>
+
+                    <div class="mobile__adress">
+                        <ul class="mobile__header-contacts-list list">
+                            <li class="mobile__header-contacts item">
+                                <a class="adres__header-menu-link color-phone icon-contacts" href="tel:+380991111111">+38 096 111 11 11</a>
+                            </li>
+
+                            <li class="mobile__header-contacts item">
+                                <a class="adres_header-menu-link color-adress icon-contacts-link" href="mailto:info@example.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+
+                        <ul class="mobile__social-nav-menu-list list">
+                            <li class="mobile__social-menu-item item"><a class="mobile__social-link" href="">Instagram</a></li>
+                            <li class="mobile__social-menu-item item"><a class="mobile__social-link" href="">Twitter</a></li>
+                            <li class="mobile__social-menu-item item"><a class="mobile__social-link" href="">Facebook</a></li>
+                            <li class="mobile__social-menu-item item"><a class="mobile__social-link" href="">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--=====================END BURGER==================-->
         </header>
 
         <!-- =======================filter buttons================= -->

@@ -294,6 +294,10 @@ section {
   }
 }
 
+.cont-bot {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-contacts-list {
   display: flex;
   /*выравнивает в одну строку список контакты*/
@@ -923,10 +927,6 @@ address p {
   font-size: 12px;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .header .container {
   display: flex;
   padding-bottom: 0;
@@ -963,7 +963,8 @@ address p {
 
 @media screen and (min-width: 1200px) {
   .hero-main-title {
-    width: 696px;
+    font-size: 44px;
+    width: 700px;
   }
 }
 

@@ -38,7 +38,8 @@
     margin: 0 auto;
     width: 360px;
     @media screen and (min-width: 1200px) {
-        width: 696px;
+        font-size: 44px;
+        width: 700px;
     }
 }
 
@@ -93,11 +94,6 @@
 
 // @media screen and (min-width: 480px) {
 //     width: 360px;
-// }
-
-// @media screen and (min-width: 1200px) {
-//     font-size: 44px;
-//     width: 700px;
 // }
 
 .hero-button {
