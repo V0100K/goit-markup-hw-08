@@ -5,6 +5,10 @@
     & li + li {
         margin-left: 50px; /*Отступ всем кроме последнего */
     }
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .color-adress {
@@ -22,4 +26,38 @@
 .contact-icon {
     fill: currentColor; /*наследование света и ховера от родителя */
     margin-right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header-contacts-list {
+        display: block; /*выравнивает в одну строку список контакты*/
+        padding-top: 21px;
+        margin: 0 auto 0 77px;
+        & li + li {
+            margin-left: 0; /*Отступ всем кроме последнего */
+            margin-top: 10px;
+        }
+        width: 100%;
+    }
+
+    .header-contacts {
+        font-size: 12px;
+    }
+
+    .header-contacts-list .header-menu-link {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .color-adress {
+        font-size: 12px;
+    }
+    .contact-icon.mail {
+        width: 14px;
+        height: 10px;
+        margin-right: 8px;
+    }
+    .contact-icon.tel {
+        width: 10px;
+        height: 14px;
+        margin-right: 8px;
+    }
 }

@@ -13,7 +13,7 @@
     </head>
 
     <body>
-        <!-- =======================Header================= --
+        <!-- =======================Header================= -->
 
         <header class="header">
             <div class="container">
@@ -26,12 +26,12 @@
                     </ul>
                 </nav>
 
-                <!-- ==============header-contacts-list========= --
+                <!-- ==============header-contacts-list========= -->
 
                 <ul class="header-contacts-list list">
                     <li class="header-contacts item">
                         <a class="header-menu-link color-adress icon-contacts-link" href="mailto:info@example.com">
-                            <svg class="contact-icon" width="16" height="12">
+                            <svg class="contact-icon mail" width="16" height="12">
                                 <use href="./img/sprite.svg#email"></use>
                             </svg>
                             info@devstudio.com
@@ -40,14 +40,56 @@
 
                     <li class="header-contacts item">
                         <a class="header-menu-link color-adress icon-contacts" href="tel:+380991111111">
-                            <svg class="contact-icon" width="10" height="16">
+                            <svg class="contact-icon tel" width="10" height="16">
                                 <use href="./img/sprite.svg#phone"></use>
                             </svg>
                             +38 096 111 11 11</a
                         >
                     </li>
                 </ul>
+                <button class="burger-btn" data-menu-open>
+                    <svg class="burger-btn__icon" width="40" height="40">
+                        <use href="./img/sprite.svg#burger"></use>
+                    </svg>
+                </button>
+                <!--===================== BURGER==================-->
             </div>
+
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button class="mobile-menu__close" data-menu-close>
+                        <svg class="mobile-menu__close-icon" width="32" height="32">
+                            <use href="./img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile__header-nav-menu-list desk list">
+                        <li class="mobile__header-nav-menu-item item"><a class="mobile__header-menu-link" href="./index.html">Студия</a></li>
+                        <li class="mobile__header-nav-menu-item item"><a class="mobile__header-menu-link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile__header-nav-menu-item item"><a class="mobile__header-menu-link" href="">Контакты</a></li>
+                    </ul>
+
+                    <div class="mobile__adress">
+                        <ul class="mobile__header-contacts-list list">
+                            <li class="mobile__header-contacts item">
+                                <a class="adres__header-menu-link color-phone icon-contacts" href="tel:+380991111111">+38 096 111 11 11</a>
+                            </li>
+
+                            <li class="mobile__header-contacts item">
+                                <a class="adres_header-menu-link color-adress icon-contacts-link" href="mailto:info@example.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+
+                        <ul class="mobile__social-nav-menu-list list">
+                            <li class="mobile__social-menu-item item"><a class="mobile__social-link" href="">Instagram</a></li>
+                            <li class="mobile__social-menu-item item"><a class="mobile__social-link" href="">Twitter</a></li>
+                            <li class="mobile__social-menu-item item"><a class="mobile__social-link" href="">Facebook</a></li>
+                            <li class="mobile__social-menu-item item"><a class="mobile__social-link" href="">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--=====================END BURGER==================-->
         </header>
 
         <!-- =====================HERO================== -->
@@ -163,16 +205,32 @@
                 <h2 class="text-minor">Чем мы занимаемся</h2>
                 <ul class="services-list list">
                     <li class="services-item item">
-                        <img src="./img/box_1.jpg" alt="Крос браузерная разработка" width="370" height="294" />
+                        <picture class="picture">
+                            <source srcset="./img/serv/img1.webp 1x, ./img/serv/img1.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="./img/serv/img1.jpg 1x, ./img/serv/img1.jpg 2x" media="(min-width: 1200px)" />
+
+                            <img src="#" alt="Чем мы занимаемся" class="gallery-list_img" />
+                        </picture>
                         <p class="our-services-over">Десктопные приложения</p>
                     </li>
+
                     <li class="services-item item">
-                        <img src="./img/box_2.jpg" alt="Адаптивная разработка" width="370" height="294" />
+                        <picture class="picture">
+                            <source srcset="./img/serv/img2.webp 1x, ./img/serv/img2.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="./img/serv/img2.jpg 1x, ./img/serv/img2.jpg 2x" media="(min-width: 1200px)" />
+
+                            <img src="#" alt="Чем мы занимаемся" class="gallery-list_img" />
+                        </picture>
                         <p class="our-services-over">Мобильные приложения</p>
                     </li>
                     <li class="services-item item">
-                        <img src="./img/box_3.jpg" alt="Оптимизация и настройка" width="370" height="294" />
-                        <p class="our-services-over">Дизайнерские решения</p>
+                        <picture class="picture">
+                            <source srcset="./img/serv/img3.webp 1x, ./img/serv/img3.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="./img/serv/img3.jpg 1x, ./img/serv/img3.jpg 2x" media="(min-width: 1200px)" />
+
+                            <img src="#" alt="Чем мы занимаемся" class="gallery-list_img" />
+                        </picture>
+                        <p class="our-services-over">Мобильные приложения</p>
                     </li>
                 </ul>
             </div>
@@ -183,11 +241,17 @@
                 <h2 class="text-minor">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item item">
-                        <picture>
-                            <source srcset="./img/photo_1.jpg" media="(min-width: 1200px)" />
-                            <source srcset="./img/tabl/photo-tabl-1.jpg" media="(min-width: 768px)" />
-                            <source srcset="./img/mob/photo-mob-1.jpg" media="(min-width: 480px)" />
-                            <img src="./img/mob/photo-mob-1.jpg" alt="Игорь Демьяненко" />
+                        <picture class="picture">
+                            <source srcset="./img/team/igor/img-dasktop.webp 1x, ./img/team/igor/img-dasktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="./img/team/igor/img-dasktop.jpg 1x, ./img/team/igor/img-dasktop@2x.jpg 2x" media="(min-width: 1200px)" />
+
+                            <source srcset="./img/team/igor/img-tablet.webp 1x, ./img/team/igor/img-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+                            <source srcset="./img/team/igor/img-tablet.jpg 1x, ./img/team/igor/img-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+
+                            <source srcset="./img/team/igor/img-mobile.webp 1x, ./img/team/igor/img-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+                            <source srcset="./img/team/igor/img-mobile.jpg 1x, ./img/team/igor/img-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+
+                            <img src="#" alt="Игорь Демьяненко" class="team_img" />
                         </picture>
                         <div class="team-title">
                             <h3>Игорь Демьяненко</h3>
@@ -226,11 +290,17 @@
                         </div>
                     </li>
                     <li class="team-list__item item">
-                        <picture>
-                            <source srcset="./img/photo_2.jpg" media="(min-width: 1200px)" />
-                            <source srcset="./img/tabl/photo-tabl-2.jpg" media="(min-width: 768px)" />
-                            <source srcset="./img/mob/photo-mob-2.jpg" media="(min-width: 480px)" />
-                            <img src="./img/mob/photo-mob-2.jpg" alt="Ольга Репина" />
+                        <picture class="picture">
+                            <source srcset="./img/team/olga/img-dasktop.webp 1x, ./img/team/olga/img-dasktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="./img/team/olga/img-dasktop.jpg 1x, ./img/team/olga/img-dasktop@2x.jpg 2x" media="(min-width: 1200px)" />
+
+                            <source srcset="./img/team/olga/img-tablet.webp 1x, ./img/team/olga/img-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+                            <source srcset="./img/team/olga/img-tablet.jpg 1x, ./img/team/olga/img-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+
+                            <source srcset="./img/team/olga/img-mobile.webp 1x, ./img/team/olga/img-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+                            <source srcset="./img/team/olga/img-mobile.jpg 1x, ./img/team/olga/img-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+
+                            <img src="#" alt="Игорь Демьяненко" class="team_img" />
                         </picture>
                         <div class="team-title">
                             <h3>Ольга Репина</h3>
@@ -269,11 +339,17 @@
                         </div>
                     </li>
                     <li class="team-list__item item">
-                        <picture>
-                            <source srcset="./img/photo_3.jpg" media="(min-width: 1200px)" />
-                            <source srcset="./img/tabl/photo-tabl-3.jpg" media="(min-width: 768px)" />
-                            <source srcset="./img/mob/photo-mob-3.jpg" media="(min-width: 480px)" />
-                            <img src="./img/mob/photo-mob-3.jpg" alt="Николай Тарасов" />
+                        <picture class="picture">
+                            <source srcset="./img/team/nicolai/img-dasktop.webp 1x, ./img/team/nicolai/img-dasktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="./img/team/nicolai/img-dasktop.jpg 1x, ./img/team/nicolai/img-dasktop@2x.jpg 2x" media="(min-width: 1200px)" />
+
+                            <source srcset="./img/team/nicolai/img-tablet.webp 1x, ./img/team/nicolai/img-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+                            <source srcset="./img/team/nicolai/img-tablet.jpg 1x, ./img/team/nicolai/img-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+
+                            <source srcset="./img/team/nicolai/img-mobile.webp 1x, ./img/team/nicolai/img-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+                            <source srcset="./img/team/nicolai/img-mobile.jpg 1x, ./img/team/nicolai/img-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+
+                            <img src="#" alt="Игорь Демьяненко" class="team_img" />
                         </picture>
                         <div class="team-title">
                             <h3>Николай Тарасов</h3>
@@ -312,11 +388,17 @@
                         </div>
                     </li>
                     <li class="team-list__item item">
-                        <picture>
-                            <source srcset="./img/photo_4.jpg" media="(min-width: 1200px)" />
-                            <source srcset="./img/tabl/photo-tabl-4.jpg" media="(min-width: 768px)" />
-                            <source srcset="./img/mob/photo-mob-4.jpg" media="(min-width: 480px)" />
-                            <img src="./img/mob/photo-mob-4.jpg" alt="Михаил Ермаков" />
+                        <picture class="picture">
+                            <source srcset="./img/team/mihail/img-dasktop.webp 1x, ./img/team/mihail/img-dasktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="./img/team/mihail/img-dasktop.jpg 1x, ./img/team/mihail/img-dasktop@2x.jpg 2x" media="(min-width: 1200px)" />
+
+                            <source srcset="./img/team/mihail/img-tablet.webp 1x, ./img/team/mihail/img-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+                            <source srcset="./img/team/mihail/img-tablet.jpg 1x, ./img/team/mihail/img-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+
+                            <source srcset="./img/team/mihail/img-mobile.webp 1x, ./img/team/mihail/img-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+                            <source srcset="./img/team/mihail/img-mobile.jpg 1x, ./img/team/mihail/img-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+
+                            <img src="#" alt="Игорь Демьяненко" class="team_img" />
                         </picture>
                         <div class="team-title">
                             <h3>Михаил Ермаков</h3>
@@ -483,5 +565,6 @@
             </div>
         </footer>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
