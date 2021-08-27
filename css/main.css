@@ -289,7 +289,7 @@ section {
 
 @media screen and (max-width: 767px) and (max-width: 400px) {
   .mobile__social-menu-item {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -456,7 +456,7 @@ section {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-left {
     text-align: start;
   }
@@ -481,7 +481,7 @@ address p {
 }
 
 /*----------------------icon sotial  footer---*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-social {
     text-align: start;
   }
@@ -1393,6 +1393,12 @@ footer {
     width: 100%;
     display: block;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hak {
+    height: 140px;
   }
 }
 /*# sourceMappingURL=main.css.map */
