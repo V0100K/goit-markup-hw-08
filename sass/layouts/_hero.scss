@@ -34,9 +34,13 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--wite-color);
+    margin-right: 0;
 
     margin: 0 auto;
-    width: 360px;
+    //width: 310px;
+    @media screen and (min-width: 480px) {
+        width: 360px;
+    }
     @media screen and (min-width: 1200px) {
         font-size: 44px;
         width: 700px;
@@ -86,7 +90,7 @@
 // }
 @media screen and (min-width: 1200px) {
     .hero {
-        max-width: 1200px;
+        max-width: 1600px;
         padding-top: 200px;
         padding-bottom: 200px;
     }

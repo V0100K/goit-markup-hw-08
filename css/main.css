@@ -311,10 +311,6 @@ section {
   }
 }
 
-.cont-bot {
-  border-bottom: 1px solid #ececec;
-}
-
 .header-contacts-list {
   display: flex;
   /*выравнивает в одну строку список контакты*/
@@ -460,6 +456,12 @@ section {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-left {
+    text-align: start;
+  }
+}
+
 .footer-left__contacts a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -479,6 +481,12 @@ address p {
 }
 
 /*----------------------icon sotial  footer---*/
+@media screen and (min-width: 768px) {
+  .footer-social {
+    text-align: start;
+  }
+}
+
 .footer-social h3 {
   text-transform: uppercase;
   color: var(--wite-color);
@@ -944,6 +952,10 @@ address p {
   font-size: 12px;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header .container {
   display: flex;
   padding-bottom: 0;
@@ -974,8 +986,14 @@ address p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--wite-color);
+  margin-right: 0;
   margin: 0 auto;
-  width: 360px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-main-title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1017,7 +1035,7 @@ address p {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1200px;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -1138,6 +1156,7 @@ address p {
   left: 0;
   width: 100%;
   padding: 27px 82px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
@@ -1336,9 +1355,8 @@ footer {
 }
 
 .work-examples-link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  position: relative;
+  display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1359,5 +1377,22 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.work-examples-item-title p {
+  font-size: 16px;
+}
+
+.work-examples-item-title {
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .img-port {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

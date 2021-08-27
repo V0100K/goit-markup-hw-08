@@ -1,6 +1,9 @@
 /*----------------------icon sotial  footer---*/
 
 .footer-social {
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
     & h3 {
         text-transform: uppercase;
         color: var(--wite-color);

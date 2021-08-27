@@ -29,9 +29,11 @@
 }
 
 .work-examples-link {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    position: relative;
+    display: block;
+    // display: flex;
+    // flex-direction: column;
+    // height: 100%;
 
     // @media screen and (min-width: 1200px) {
     //     width: calc((100% - 90px) / 3);
@@ -61,4 +63,20 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+}
+.work-examples-item-title p {
+    font-size: 16px;
+}
+
+.work-examples-item-title {
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .img-port {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
 }
